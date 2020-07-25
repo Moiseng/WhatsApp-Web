@@ -96,6 +96,15 @@ export const dummyUsers: User[] = [
     }
 ]
 
+if (Meteor.isServer) {
+    Meteor.publish('users.all', function () {
+        return Meteor.users.find({}, {
+            // retire le champ servire pour ne pas que les utilisateur puisse voir les mot de passe
+            fields: {service: 0}
+        })
+    })
+}
+
 Meteor.methods({
     'user.login': function ({username, phone, password}) {
         let userExist:boolean;
