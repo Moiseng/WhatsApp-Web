@@ -97,14 +97,24 @@ export const dummyUsers: User[] = [
 ]
 
 Meteor.methods({
-    'user.login': function ({username, phone, profile}) {
+    'user.login': function ({username, phone, password}) {
         let userExist:boolean;
         const user:User = Accounts.findUserByUsername(username);
         userExist = !!user // " !! ", si l'utilisateur existe retourne true, sino retourne false
         if (userExist) {
-            console.log('User Exist', user)
+            // logger l'utilisateur
+            return true;
         } else {
-            console.log('User don\' exist')
+            // Créer l'utilisateur
+            return Accounts.createUser({
+                username,
+                password,
+                profile: {
+                    phone,
+                    actu: 'Salut s\'utilise whatsapp',
+                    picture: "https://t3.ftcdn.net/jpg/01/09/00/64/240_F_109006426_388PagqielgjFTAMgW59jRaDmPJvSBUL.jpg"
+                }
+            })
         }
     }
 })
