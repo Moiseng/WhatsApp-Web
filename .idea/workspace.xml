@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3659674-65f5-49e1-a1bc-78884e0577cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/ChatItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/ChatItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/ChatList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/ChatList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/Left.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/Left.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/Right.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/Right.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/Footer.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +18,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/MessageView.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/elements/StyledHeader.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="31">
@@ -36,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/components/Footer.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+            <state relative-caret-position="310">
+              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -283,12 +288,12 @@
       <workItem from="1595747696577" duration="8934000" />
       <workItem from="1595782667782" duration="223000" />
       <workItem from="1595783090999" duration="5470000" />
-      <workItem from="1596046457776" duration="777000" />
+      <workItem from="1596046457776" duration="2362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59217000" />
+    <option name="totallyTimeSpent" value="60802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -685,16 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/MessageView.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/elements/StyledFooter.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1488">
@@ -709,10 +704,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/MessageView.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/Footer.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        <state relative-caret-position="310">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

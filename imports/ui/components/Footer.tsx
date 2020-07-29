@@ -3,14 +3,25 @@ import FontAwesome from 'react-fontawesome';
 import StyledFooter from '../elements/StyledFooter'
 
 const Footer = (props:any):JSX.Element => {
+    const [inputValue, setInputValue] = React.useState<string>("");
+    const [iconName, setIconName] = React.useState<string>("microphone")
+
+    const handleChange = (e:React.ChangeEvent<HTMLInputElement>):void => {
+        setInputValue(e.target.value)
+        const name:string = e.target.value !== "" ? "paper-plane" : "microphone"
+        setIconName(name)
+    }
 
     return (
         <StyledFooter>
             <FontAwesome className="iconFooter" name="smile"/>
             <label className="message--label">
-                <input className="message--input" placeholder="Taper votre message"/>
+                <input
+                    className="message--input"
+                    placeholder="Taper votre message"
+                    value={inputValue} onChange={handleChange}/>
             </label>
-            <FontAwesome className="iconFooter" name="microphone"/>
+            <FontAwesome className="iconFooter" name={iconName}/>
         </StyledFooter>
     )
 }
