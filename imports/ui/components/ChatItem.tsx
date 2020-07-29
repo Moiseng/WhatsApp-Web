@@ -8,7 +8,7 @@ import Avatar from './Avatar'
 const ChatItem = (props:any):JSX.Element => {
 
 
-    const {title, picture, lastMessage} = props
+    const {title, picture, lastMessage, onChatClick, _id, active} = props
     const {content, createdAt} = lastMessage
     const now:string = moment().format('D/MM/YYYY')
     const today:boolean = now === moment(createdAt).format("DD/MM/YYYY")
@@ -17,7 +17,7 @@ const ChatItem = (props:any):JSX.Element => {
     //console.log('createdAt format', createdAt)
 
     return (
-        <StyledChatItem>
+        <StyledChatItem onClick={() => onChatClick(_id)} active={active}>
             <Avatar large avatar_url={picture}/>
             <div className="chat--contentContainer">
                 <div className="content--line1">

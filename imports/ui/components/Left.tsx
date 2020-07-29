@@ -14,7 +14,7 @@ const icons:string[] = ["circle-notch", "comment-alt", "ellipsis-v"];
 const Left = (props:any): JSX.Element => {
     // la photo de profile
     const avatar_url:string = Meteor.user().profile.picture
-    const { chats } = props;
+    const { chats, onChatClick, selectedChat } = props;
     
     return (
         <StyledLeft>
@@ -23,7 +23,11 @@ const Left = (props:any): JSX.Element => {
             </Header>
             <Status />
             <SearchBar/>
-            <ChatList chats={chats}/>
+            <ChatList
+                chats={chats}
+                onChatClick={onChatClick}
+                selectedChat={selectedChat}
+            />
         </StyledLeft>
     )
 }
